@@ -1,0 +1,27 @@
+body{
+    background: slategray;
+}
+
+#header{
+    color:#fff;
+
+}
+.abc{
+    background: crimson;
+}
+
+.xyz{
+    background: green;  
+}
+
+#menu{
+    background: mediumpurple;
+}
+#menu a{
+    color: #fff;
+}
+
+#menu a:hover{
+    background: crimson;
+}
+
