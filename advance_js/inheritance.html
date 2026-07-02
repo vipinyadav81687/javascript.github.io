@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advance Js</title>
+<script>
+        class employee{
+            constructor(name){
+                this.empname = name;
+                console.log("Constructor: Employee" );
+
+            }
+
+            info(){
+                console.log("Employee Name  info: " + this.empname);
+            }
+
+        }
+
+        // class manager extends employee{
+        //      constructor(){
+        //         super(); 
+        //         console.log("Constructor: Manager" );
+
+        //     }
+        // }
+
+        class manager extends employee{
+            info(){
+
+                console.log("Employee Name  info2: " + this.empname);
+              super.info();
+            }
+        }
+        let a = new manager("vipin yadav");
+         a.info();
+    </script>
+</head>
+<body>
+  
+</body>
+</html>

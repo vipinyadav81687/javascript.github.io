@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Promises</title>
+    <script>
+      function prom(complete){
+        let prom = new Promise(function(resolve, reject){
+        if(complete){
+        resolve("I am sucessful.");
+        }else{
+         reject("I am failed.");
+        }
+        });
+    }
+
+
+    let onfulfilment = (result)=> {
+        console.log(result);
+    }
+    let onRejection = (error) => {
+        console.log(error); 
+    }
+ prom(true).then(onfulfilment);
+ prom(true).catch(onRejection);
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

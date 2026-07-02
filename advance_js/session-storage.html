@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+<body>
+    <h1>Session Storage</h1> 
+<input type="text" id="username"/>
+<button id="saveBtn">Save</button>
+<button id="removeBtn">remove</button>
+</body>
+<script>
+    let input = document.querySelector("#username")
+    let button = document.querySelector("#saveBtn")
+   
+   input.value = sessionStorage.getItem("username") || ""
+  
+   button.addEventListener("click", () =>{
+    sessionStorage.setItem("username",input.value)
+    alert("saved!")
+   })
+
+
+
+   let removeBtn = document.querySelector("#removeBtn");
+
+removeBtn.addEventListener("click", () => {
+    sessionStorage.removeItem("username");
+    input.value = "";
+    alert("Removed!");
+});
+
+</script>
+
+</html>

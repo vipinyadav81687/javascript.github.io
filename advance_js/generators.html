@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Generator</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function *generateit(){
+console.log('first Message');
+yield 'Yield No.1';
+console.log('second Message');
+yield 'Yield No.2';
+
+    }
+
+    let g = generateit();
+    console.log(g.next());
+    console.log(g.next());
+
+
+</script>
+</html>

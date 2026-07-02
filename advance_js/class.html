@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advance Js</title>
+    <!-- <script>
+          class hello{
+        message(){
+            console.log("Hello Everyone");
+        }
+        sorry(){
+            console.log("Sorry Everyone");
+        }
+    }
+
+    let a =  new hello();
+    a.message();
+    a.sorry();
+    </script> -->
+    <!-- <script>
+        class student{
+            constructor(){
+                let name;
+                console.log("Constructor Finction");
+            }
+
+            hello(){
+            console.log(this.name);
+            }
+        }
+
+        let a = new student();
+        a.name = "Vipin Yadav";
+        a.hello();
+    </script> -->
+    <script>
+          class student{
+            constructor(name,age){
+                this.studentname = name;
+                this.studentage = age;
+                console.log("Constructor Finction");
+            }
+
+            hello(){
+            // console.log(this.studentname +this.studentage );
+            console.log(`hello ${this.studentname} your age is ${this.studentage}`);
+            }
+
+            static staticMethod(){
+                console.log("static Function")
+            }
+        }
+
+        let a = new student("vipin Yadav",25);
+        let b = new student("Ram kumar",22);
+        a.hello();
+        b.hello();
+
+        student.staticMethod();
+    </script>
+</head>
+<body>
+  
+</body>
+</html>

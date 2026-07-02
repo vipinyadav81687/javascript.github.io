@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Async</title>
+</head>
+<body>
+    
+</body>
+<!-- <script>
+    async function test(){
+        return "Hello";
+    }
+ test().then((result)=>{
+    console.log(result);
+ });
+</script> -->
+<script>
+    async function test(){
+    console.log("A");
+    await console.log("B");
+    console.log("C");
+    
+}
+
+test();
+console.log("D");
+console.log("E");
+</script>
+</html>
